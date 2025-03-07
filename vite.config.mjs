@@ -9,7 +9,7 @@ export default defineConfig({
 		NodeCGPlugin({
 			inputs: {
 				"graphics/index.tsx": "./src/graphics/template.html",
-				"dashboard/*.tsx": "./src/dashboard/template.html",
+				"dashboard/index.tsx": "./src/dashboard/template.html",
 			},
 		}),
 	],

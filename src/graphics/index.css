@@ -1,0 +1,39 @@
+.root {
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 36px 36px;
+	grid-template-rows: auto;
+	gap: 2px;
+	bottom: 30px;
+	left: 30px;
+	background-color: #0485a5;
+	color: white;
+}
+.root > * {
+	padding: 8px;
+}
+
+.player {
+	position: relative;
+	margin-right: 10px;
+}
+
+.player[data-serve=true]::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -5px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid rgb(179, 179, 179);
+}
+
+.match_score {
+	text-align: center;
+	background-color: #1c5766;
+}
+
+.game_score {
+	text-align: center;
+}
